@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{ margin:0; padding:0; }
+	div{ width:200px; height:200px; background:red; margin:100px auto;  position:relative; -webkit-transform-style:preserve-3d; -webkit-transform:rotateY(-30deg) rotateX(30deg); -webkit-perspective:800px; }
+	span{ width:200px; height:200px; background:blue; position:absolute; -webkit-transition:1s all ease; }
+	div:active span{ -webkit-transform:translateZ(300px); }
+</style>
+</head>
+
+<body>
+<div>
+	<span></span>
+</div>
+</body>
+</html>

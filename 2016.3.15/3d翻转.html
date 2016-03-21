@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{ margin:0; padding:0; }
+	div{ width:200px; height:300px; margin:100px auto; position:relative; -webkit-transform-style:preserve-3d;  -webkit-transition:1s all ease; }
+	span{ width:200px; height:300px; position:absolute; top:0; left:0; font-size:30px; text-align:center; line-height:300px; }
+	.front{ background:red; -webkit-transform:translateZ(2px);}
+	.back{ background:yellow; -webkit-transform:scale(-1,1) translateZ(-2px); }
+	div:active{ -webkit-transform:perspective(800px) rotateY(180deg); }
+</style>
+</head>
+
+<body>
+<div>
+	<span class="front">front</span>
+    <span class="back">back</span>
+</div>
+</body>
+</html>
